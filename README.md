@@ -11,7 +11,9 @@ A list of cool software for genetic analysis and the like.
 
 # GWAS
 
-- **PLINK2** [https://www.cog-genomics.org/plink/2.0/](https://www.cog-genomics.org/plink/2.0/)  
+- **PLINK2** [https://www.cog-genomics.org/plink/2.0/](https://www.cog-genomics.org/plink/2.0/)
+
+- **imputePrepSanger** [https://github.com/eauforest/imputePrepSanger](https://github.com/eauforest/imputePrepSanger): This pipeline takes plink genotype files, and adjusts the strand, the positions, the reference alleles, performs quality control steps and output a vcf file that satisfies the requirement for submission to the Sanger Imputation Service (https://imputation.sanger.ac.uk/) for imputation using the Haplotype Reference Consortium reference panel.
 
 - **bgenie** [https://jmarchini.org/bgenie](https://jmarchini.org/bgenie/): A program for efficient GWAS for multiple continuous traits and PHEWAS with many features designed and optimized for large scale analysis.  
 
@@ -24,6 +26,8 @@ A list of cool software for genetic analysis and the like.
 # Polygenic Risk Score
 
 - **PRSice** [https://github.com/choishingwan/PRSice](https://github.com/choishingwan/PRSice): PRSice (pronounced 'precise') is a software package for calculating, applying, evaluating and plotting the results of polygenic risk scores (PRS). PRSice can run at high-resolution to provide the best-fit PRS as well as provide results calculated at broad P-value thresholds, illustrating results corresponding to either, can thin SNPs according to linkage disequilibrium and P-value ("clumping"), and can be applied across multiple traits in a single run.
+
+- **PRS-on-Spark (PRSoS)** [https://github.com/MeaneyLab/PRSoS](https://github.com/MeaneyLab/PRSoS): PRS-on-Spark (PRSoS) generates polygenic risk scores (PRS) for large genotype data, including imputed genotype posterior probabilites. PRSos performs faster than PRSice v1.25 for large number of SNPs (~17 million) and by including imputated posterior probabilities and strand-ambiguous SNPs it modestly increases the proportion of variance explained by a PRS for major depressive disorder ([Chen et al., 2018](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2289-9)). It can use multiple cores to increase processing efficiency (i.e., reduce processing time). PRSoS is compatible with Linux, Mac OS, and Windows. It runs using Apache Spark and Python.
 
 - **lassosum** [https://github.com/tshmak/lassosum](https://github.com/tshmak/lassosum): lassosum is a method for computing LASSO estimates of a linear regression problem given summary statistics from GWAS and Genome-wide meta-analyses, accounting for Linkage Disequilibrium (LD), via a reference panel. The reference panel is assumed to be in PLINK format. Summary statistics are expected to be loaded into memory as a data.frame/data.table.
 
